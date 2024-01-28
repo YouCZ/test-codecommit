@@ -1,13 +1,10 @@
 name: workflow 1
 
 on: 
-  push:
+  workflow_dispatch:
     branches:
       - main
-  delete:
-    branches:
-      - main
-    
+
 jobs:
   to_codecommit:
     runs-on: ubuntu-latest
