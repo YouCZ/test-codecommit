@@ -1,4 +1,4 @@
-name: Mirroring
+name: workflow 2
 
 on: 
   push:
