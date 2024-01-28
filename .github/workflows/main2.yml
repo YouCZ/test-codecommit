@@ -1,10 +1,7 @@
 name: workflow 2
 
 on: 
-  push:
-    branches:
-      - DEV
-  delete:
+  workflow_dispatch:
     branches:
       - DEV
     
