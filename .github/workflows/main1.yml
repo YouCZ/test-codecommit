@@ -1,7 +1,13 @@
 name: Mirroring
 
-on: [ push, delete ]
-
+on: 
+  push:
+    branches:
+      - main
+  delete:
+    branches:
+      - main
+    
 jobs:
   to_codecommit:
     runs-on: ubuntu-latest
@@ -15,3 +21,4 @@ jobs:
             ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY }}
           ssh_username:
             ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY_ID }}
+
