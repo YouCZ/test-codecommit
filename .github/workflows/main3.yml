@@ -1,4 +1,3 @@
-Github Actions
 name: workflow 3 OCID ENV
 
 on: 
